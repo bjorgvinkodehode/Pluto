@@ -15,7 +15,7 @@
     #000000
   );
   --clr-text: #cacaca;
-  --clr-: linear-gradient(#e1ac6c 0 0);
+  --clr-: linear-gradient(#cacaca 0 0);
 }
 
 *,
