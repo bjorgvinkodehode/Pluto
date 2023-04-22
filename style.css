@@ -1,0 +1,159 @@
+:root {
+  --clr-background: linear-gradient(
+    to right,
+    #262626,
+    #242424,
+    #222222,
+    #212121,
+    #1f1f1f,
+    #1d1d1d,
+    #1a1a1a,
+    #181818,
+    #141414,
+    #0e0e0e,
+    #080808,
+    #000000
+  );
+  --clr-text: rgb(202, 202, 202);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--clr-background);
+  color: var(--clr-text);
+  margin: 20px;
+  margin-top: 20px;
+  padding: 0 20%;
+}
+.topp {
+  background-image: var(--clr-background), url(img/13.png);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  font-size: 46px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#pluto {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#pluto {
+  height: 5vh;
+}
+
+#pluto a {
+  text-decoration: none;
+  color: var(--clr-text);
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+section {
+  height: 80vh;
+}
+
+section .div {
+  padding: 20px;
+}
+
+section div h2 {
+  margin-top: 0;
+}
+
+section div p {
+  margin-bottom: 0;
+}
+
+section div .image {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: repeat(1, auto);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: solid black thin;
+    border-bottom: solid black thin;
+    background-color: #f2f2f2;
+  }
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+  position: relative;
+  right: -190%;
+  transition: all 1s ease-in-out;
+}
+
+.drop {
+  right: 0;
+}
+
+h2,
+p {
+  opacity: 0;
+}
+
+a {
+  --c: linear-gradient(#ffffff 0 0);
+
+  padding-bottom: 0.15em;
+  background: var(--c), var(--c);
+  background-size: 0.3em 0.1em;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  transition: 0.3s linear, background-size 0.3s 0.2s linear;
+}
+a:hover {
+  background-size: 40% 0.1em;
+  background-position: 10% 100%, 90% 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
