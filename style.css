@@ -14,7 +14,8 @@
     #080808,
     #000000
   );
-  --clr-text: rgb(202, 202, 202);
+  --clr-text: #cacaca;
+  --clr-: linear-gradient(#e1ac6c 0 0);
 }
 
 *,
@@ -116,9 +117,23 @@ img {
 .image1,
 .image2,
 .image3,
-.image4 {
+.image4,
+.image5 {
   position: relative;
   right: -190%;
+  transition: all 1s ease-in-out;
+}
+
+#text1,
+#text2,
+#text3,
+#text4,
+#text5,
+#text6,
+#text7,
+#text8,
+#text9,
+#text10 {
   transition: all 1s ease-in-out;
 }
 
@@ -132,10 +147,8 @@ p {
 }
 
 a {
-  --c: linear-gradient(#ffffff 0 0);
-
   padding-bottom: 0.15em;
-  background: var(--c), var(--c);
+  background: var(--clr-), var(--clr-);
   background-size: 0.3em 0.1em;
   background-position: 50% 100%;
   background-repeat: no-repeat;
@@ -156,17 +169,4 @@ a:hover {
   width: 50px;
   border-radius: 50%;
   margin: 0 10px;
-}
-
-#text1,
-#text2,
-#text3,
-#text4,
-#text5,
-#text6,
-#text7,
-#text8,
-#text9,
-#text10 {
-  transition: all 1s ease-in-out;
 }
