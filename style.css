@@ -16,12 +16,16 @@
   );
   --clr-text: #cacaca;
   --clr-: linear-gradient(#cacaca 0 0);
+  font-family: "Bruno Ace SC", cursive;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -30,7 +34,10 @@ body {
   margin: 20px;
   margin-top: 20px;
   padding: 0 20%;
+  overflow-x: hidden;
+  text-align: center;
 }
+
 .topp {
   background-image: var(--clr-background), url(img/13.png);
   background-blend-mode: lighten;
@@ -44,6 +51,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin: 2rem;
 }
 #pluto {
   display: grid;
@@ -96,22 +104,6 @@ section div .image {
 
 img {
   max-width: 100%;
-}
-
-@media (max-width: 768px) {
-  section {
-    grid-template-columns: repeat(1, auto);
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: solid black thin;
-    border-bottom: solid black thin;
-    background-color: #f2f2f2;
-  }
 }
 
 .image1,
